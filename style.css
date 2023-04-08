@@ -142,18 +142,52 @@ main {
 	gap: 10px;
   }
   
-  .image-grid img {
+  .grid-item {
+	position: relative;
+  }
+  
+  .grid-image {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
   }
+  
+  .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: opacity 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover .overlay {
+	opacity: 1;
+  }
+  
+  button {
+	color: #fff;
+	background-color: #000;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
 
-  .image-grid img:hover{
+  
+
+  /* .image-grid img:hover{
 	-webkit-filter: brightness(50%);
 	filter: brightness(50%);
 	transition: all 0.5s ease;
-  }
+  } */
 
 /* .xyz{
 	margin-top: 20px;
