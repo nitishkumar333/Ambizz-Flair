@@ -1,0 +1,54 @@
+.abc{
+    position: relative;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.header {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    background-color:transparent;
+  }
+  .header img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .content {
+    width: min(88vw,800px);
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+
+  .footer {
+    position: fixed;
+	margin-top: 10px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.footer .text{
+    margin: 0;
+    padding-top: 40px;
+}
+.footer .email{
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
