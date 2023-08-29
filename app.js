@@ -31,3 +31,12 @@ threeImages.forEach(image => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.querySelector(".menu-toggle");
+  const sidebar = document.querySelector("header nav");
+  function handler() {
+    sidebar.classList.toggle("active");
+  }
+  toggleButton.addEventListener("click", handler);
+});

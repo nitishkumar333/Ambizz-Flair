@@ -4,45 +4,6 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
-}
-
-nav {
-	background-color: #ccc;
-	padding: 10px;
-	position: fixed;
-  	top: 0;
-  	left: 0;
-  	width: 100%;
-  	background-color: white;
-	z-index: 100;
-}
-
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-}
-
-nav li {
-	margin: 0 10px;
-}
-
-nav a {
-	color: #333;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #333;
-	text-decoration: underline;
-}
-
 .whatsapp {
 	z-index: 100;
 	position: fixed;
@@ -270,3 +231,91 @@ footer {
 		height: 300px;
 	}
 }
+
+
+
+/* header */
+
+header {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0 100px;
+	background: #262626;
+	width: 100%;
+	box-sizing: border-box;
+  }
+  header .logo {
+	color: #FFF;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	font-weight: 100;
+	float: left;
+	letter-spacing: 4px;
+	font-family: 'Calibri', 'Trebuchet MS', sans-serif ;
+  }
+  header .logo img{
+	width: 40px;
+  }
+  header nav {
+	float: right;
+  }
+  header nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+  }
+  header nav ul li {
+	list-style: none;
+  }
+  header nav ul li a {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+  }
+  header nav ul li:hover{
+	color: #FFF;
+	background: #2196F3;
+  }
+  .menu-toggle {
+	color: #FFF;
+	float: right;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+  }
+  @media (max-width: 991px) {
+	header {
+	  padding: 0 20px;
+	}
+	.menu-toggle {
+	  display: block;
+	}
+	header nav {
+	  position: absolute;
+	  width: 100%;
+	  height: calc(100vh - 50px);
+	  background: #333;
+	  top: 50px;
+	  left: -100%;
+	  transition: 0.5s;
+	}
+	header nav.active {
+	  left: 0;
+	}
+	header nav ul {
+	  display: block;
+	  text-align: center;
+	}
+	header nav ul li a {
+	  border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+  }
+
+
